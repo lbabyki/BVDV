@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Phần banner */
+.banner-title {
+    background-color: #d9d9d9;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.banner-title h1 {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+/* Phần thông báo phụ */
+.section-info {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.section-info h2 {
+    color: #028a0f;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.section-info p {
+    font-size: 14px;
+    color: #222;
+    line-height: 1.5;
+}
+
+/* Phần gạch vàng */
+.line-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+.line {
+    width: 70%; 
+    height: 3px; 
+    background-color: #fcc931;
+    border-radius: 1px;
+}
+
+.line-left {
+    align-self: flex-start; 
+    margin-left: 0%;
+}
+
+.line-right {
+    align-self: flex-end; 
+    margin-right: 0%;
+}
+.section-rescue {
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.section-rescue .phone-icon {
+    font-size: 24px;
+    color: #028a0f; 
+    margin-bottom: 8px;
+}
+
+.section-rescue h2 {
+    color: #028a0f;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.section-rescue-details {
+    padding: 40px 20px;
+}
+
+.rescue-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rescue-image {
+    flex: 0 0 40%; 
+    margin-right: auto;
+}
+
+.rescue-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+}
+
+.rescue-text {
+    flex: 0 0 60%;
+    margin-left: auto; 
+}
+
+.rescue-text .phone-icon {
+    width: 24px; 
+    height: 24px;
+    margin-bottom: 8px;
+}
+
+.rescue-text p {
+    font-size: 14px;
+    color: #222;
+    line-height: 1.5;
+}
+
+.rescue-text a {
+    color: #028a0f;
+    text-decoration: none;
+}
+
+.rescue-text a:hover {
+    text-decoration: underline;
+}
+
+.line {
+    width: 70%; 
+    height: 3px; 
+    background-color: #fcc931;
+    border-radius: 1px;
+}
+.section-info:last-of-type {
+    padding-top: 0;
+    padding-bottom: 40px;
+}
+.line-left {
+    align-self: flex-start;
+    margin-left: 0%; 
+}
+
+.line-right {
+    align-self: flex-end;
+    margin-right: 0%;
+}
