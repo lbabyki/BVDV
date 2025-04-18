@@ -1,303 +1,354 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #fff;
-    color: #333;
-  }
-  
-  header {
-    text-align: center;
-    background: #e6f0fa;
-    padding-bottom: 20px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
 }
-.header-with-decoration {
-    position: relative;
-    text-align: center;
-    background: none;
-    padding-bottom: 20px;
+
+header {
+  text-align: center;
+  margin-bottom: 0; 
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 10px 60px;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between; 
+  padding: 10px 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 
 .title-container {
-    position: relative;
-    display: inline-block;
-    margin: 30px 0;
-    width: 100%;
-    text-align: center;
+  position: relative;
+  display: inline-block;
+  margin: 30px 0;
+  width: 100%;
+  text-align: center;
 }
 
 .title-decoration {
-    width: 100%;
-    height: 600px;
-    display: block;
-    margin: 0 auto;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 10px 60px;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 600px;
+  display: block;
+  margin: 0 auto;
+  
 }
 
 .nav-actions {
-    display: flex;
-    align-items: center;
-    gap: 100px; 
+  display: flex;
+  align-items: center;
+  gap: 100px; 
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 100px; 
+  list-style: none;
+  display: flex;
+  gap: 100px; 
 }
 
 nav ul li {
-    cursor: pointer;
-    color: #333;
-    font-weight: 500;
+  cursor: pointer;
+  color: #333;
+  font-weight: 500;
 }
 
 .actions {
-    display: flex;
-    align-items: center;
-    gap: 100px; 
+  display: flex;
+  align-items: center;
+  gap: 100px; 
 }
 
 .donate {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 8px 14px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .search-icon {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .main-title {
-    margin: 30px 0;
-    font-size: 36px;
-    font-weight: bold;
-    color: #00703c;
-    font-family: 'Roboto', Arial, sans-serif;
+  margin: 30px 0;
+  font-size: 36px;
+  font-weight: bold;
+  color: #00703c;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 .overlay-title {
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 36px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: 'Roboto', Arial, sans-serif;
-    text-transform: uppercase;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 64px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Roboto', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.donate-overlay {
+  position: absolute;
+  top: 75%; /* nằm dưới tiêu đề */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 
 .contact-buttons {
-    background: #fff;
-    padding: 20px 0;
-    border-bottom: 2px solid #ffd700;
-  }
+position: relative;
+padding-bottom: 50px; /* để có không gian hiển thị 2 đường kẻ */
+}
+
+.contact-buttons::before,
+.contact-buttons::after {
+content: "";
+position: absolute;
+height: 4px;
+width: 70%; /* mỗi đường dài khoảng 35% màn hình */
+background-color: #ffd700;
+}
+
+.contact-buttons::before {
+left: 0;
+bottom: 30px; /* dòng đầu tiên */
+}
+
+.contact-buttons::after {
+right: 0;
+bottom: 5px; /* dòng thứ hai, cách 15px bên dưới */
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 160px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background: none; 
+  border-radius: 10px;
+  box-shadow: none;
+  text-align: center;
+}
+
+.contact-btn .icon {
+  width: 50px;
+  font-size: 500px;
+  object-fit: contain;
+}
+
+.contact-btn p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+.contact-btn .highlight {
+  color: #28a745; /* Màu xanh lá cây */
+}
+
+
+/* Address and Map */
+.address-map {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.address {
+  text-align: center;
+  flex: 1;
+  min-width: 300px;
+}
+
+.address h2 {
+  color: #28a745;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.address p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.map {
+  flex: 1;
+  min-width: 300px;
+}
+
+.map img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.address-map-wrapper {
+  position: relative;
+  padding-bottom: 60px; /* tạo không gian cho đường kẻ */
+}
+
+.address-map-wrapper::before,
+.address-map-wrapper::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 70vw; /* chính xác 70% chiều ngang trình duyệt */
+  background-color: #ffd700;
+}
+
+.address-map-wrapper::before {
+  left: 0;
+  bottom: 30px;
+}
+
+.address-map-wrapper::after {
+  right: 0;
+  bottom: 5px;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-form h2 {
+  color: #28a745;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   
-  .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 160px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .contact-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
-    background: none; 
-    border-radius: 10px;
-    box-shadow: none;
-    text-align: center;
-  }
-  
-  .contact-btn .icon {
-    width: 50px;
-    font-size: 500px;
-    object-fit: contain;
-  }
-  
-  .contact-btn p {
-    margin: 0;
-    font-size: 16px;
-    color: #333;
-  }
-  .contact-btn .highlight {
-    color: #28a745; /* Màu xanh lá cây */
-  }
-  
-  /* Address and Map */
-  .address-map {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding: 50px 20px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .address {
-    flex: 1;
-    min-width: 300px;
-  }
-  
-  .address h2 {
-    color: #28a745;
-    font-size: 1.5em;
-    margin-bottom: 20px;
-  }
-  
-  .address p {
-    margin: 10px 0;
-    line-height: 1.6;
-  }
-  
-  .map {
-    flex: 1;
-    min-width: 300px;
-  }
-  
-  .map img {
-    width: 500px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
-  
-  /* Contact Form */
-  .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .contact-form h2 {
-    color: #28a745;
-    font-size: 1.5em;
-    margin-bottom: 30px;
-  }
-  
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .contact-form label {
-    text-align: left;
-    font-weight: bold;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .contact-form textarea {
-    height: 150px;
-    resize: none;
-  }
-  
-  .contact-form button {
-    background-color: #ffd700;
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    width: 120px;
-    text-align: center;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 16px;
-  }
-  
-  .contact-form button:hover {
-    background-color: #ffca2c;
-  }
-  
-  /* Footer */
-  footer {
-    background: linear-gradient(to right, #28a745, #17a2b8);
-    color: white;
-    padding: 30px 20px;
-  }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-  }
-  
-  .footer-logo img {
-    width: 50px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-logo p {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .footer-info h3,
-  .footer-social h3 {
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-  
-  .footer-info p {
-    margin: 5px 0;
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .social-icons span {
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .copyright {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 12px;
-  }
+}
+
+.contact-form label {
+  text-align: left;
+  font-weight: bold;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+width: 50%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #D9D9D9;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contact-form button {
+  background-color: #ffd700;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  width: 120px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background-color: #ffca2c;
+}
+
+
+/* Footer */
+footer {
+  background: linear-gradient(to right, #28a745, #17a2b8);
+  color: white;
+  padding: 30px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-info h3,
+.footer-social h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons span {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+}
 
