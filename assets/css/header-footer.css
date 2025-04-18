@@ -6,12 +6,15 @@
     padding: 10px 20px;
   }
   
-  .footer-image img {
+  .header-image img {
     height: 40px;
-    width: 70px;
   }
   
-  
+  .icons img {
+    height: 40px; /* Khớp với font-size của .nav span */
+    margin-right: 50px;
+    vertical-align: middle; /* Căn chỉnh ảnh với văn bản */
+}
   .nav a {
     margin: 0 10px;
     color: black;
@@ -23,9 +26,9 @@
   .nav {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     margin-left: auto;
-    margin-right: 30px;
+    margin-right: 40px;
 }
 
   
@@ -36,23 +39,19 @@
   .actions {
     display: flex;
     align-items: center;
+    gap: 40px;
   }
   
   .donate-btn {
-    background-color: #b0ff52;
+    background-color: #83F66E;
     border: none;
     padding: 8px 16px;
     border-radius: 10px;
     font-weight: bold;
-    margin-right: 15px;
     cursor: pointer;
   }
   
-  .icons span {
-    font-size: 18px;
-    margin-left: 10px;
-    cursor: pointer;
-  }
+
   
 
   .footer {
@@ -71,7 +70,8 @@
   }
   
   .footer-image img {
-    width: 40px;
+    width: 200px;
+    height: 200px;
     margin-top: 0px;
   }
   
@@ -118,6 +118,12 @@
     color: white;
     font-weight: bold;
     margin-bottom: 10px;
+    white-space: nowrap;
+  }
+
+  .footer-contact p {
+    margin-bottom: 10px;
+    margin-top: 20px;
   }
   
   .footer-form form {
@@ -157,10 +163,10 @@
   font-size: 14px;
   margin-top: 10px;
 }
-  .footer-social .social-icons {
+  .footer-social .social-icons img {
     margin-top: 2px;
     font-size: 24px;
-    
+    margin-right: 20px;
   }
 
   .footer-social h4 {

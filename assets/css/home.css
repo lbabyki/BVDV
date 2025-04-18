@@ -16,7 +16,7 @@ body {
 
 .title-decoration {
   width: 100%;
-  height: 600px;
+  height: 800px;
   display: block;
   margin: 0 auto;
   
@@ -80,22 +80,24 @@ nav ul li {
   text-transform: uppercase;
   text-align: center;
 }
+.overlay-title span {
+  white-space: nowrap; /* Ngăn ngắt dòng trong mỗi <span> */
+}
 
-.donate-overlay {
+.title-btn {
   position: absolute;
-  top: 75%; /* nằm dưới tiêu đề */
+  top: 65%; /* Nằm dưới tiêu đề */
   left: 50%;
   transform: translateX(-50%);
-  background-color: #28a745;
+  background-color: #83F66E;
   color: white;
   border: none;
-  padding: 12px 24px;
+  padding: 14px 28px;
   border-radius: 25px;
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  color: black;
 }
 
 .donate-overlay:hover {
@@ -109,8 +111,8 @@ nav ul li {
 
 .intro h2 {
   font-size: 2em;
-  margin-bottom: 10px;
-  color: #28a745;
+  margin-bottom: 30px;
+  color: #139847;
 }
 
 .intro p {
@@ -118,7 +120,7 @@ nav ul li {
   line-height: 1.6;
   margin-top: 20px;
   margin-bottom: 30px; /* tăng khoảng cách phía dưới */
-  max-width: 800px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -127,7 +129,7 @@ nav ul li {
 .intro .btn {
   display: inline-block;
   padding: 10px 20px;
-  background: #28a745;
+  background: #139847;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -141,16 +143,16 @@ nav ul li {
 
 .activities h2 {
   text-align: center;
-  color: #228B22; 
-  font-size: 24px;
+  color: #139847; 
+  font-size: 36px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 90px;
 }
 
 .activity-cards {
   display: flex;
   justify-content: center;
-  gap: 150px;
+  gap: 90px;
   flex-wrap: wrap;
 }
 
@@ -234,101 +236,6 @@ border-top: 3px solid #4CAF50;
   opacity: 1; /* Hiển thị dòng chữ phụ khi hover */
 }
 
-.support {
-  display: flex;
-  justify-content: center;
-  padding: 50px 20px;
-}
-
-.support-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 120px;
-  border: 3px solid #008000;
-  border-radius: 25px;
-  padding: 40px 30px;
-  max-width: 1400px;
-  width: 100%;
-}
-
-.support-item {
-  flex: 1 1 200px;
-  max-width: 220px;
-  text-align: center;
-  color: #000;
-}
-
-.support-item img {
-  height: 35px;
-  margin-bottom: 15px;
-}
-
-.support-item h3 {
-  color: #008000;
-  font-size: 1.1em;
-  margin-bottom: 10px;
-}
-
-.activity-cards {
-  display: flex;
-  justify-content: center;
-  gap: 180px;
-  flex-wrap: wrap;
-}
-
-.activity-card {
-  position: relative;
-  width: 400px;
-  height: 300px;
-  border-radius: 50px 20px 50px 20px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.activity-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: opacity 0.3s ease;
-}
-.activity-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba;
-  border-radius: 50px 20px 50px 20px; /* Lớp phủ màu xanh lam nhạt */
-  transition: opacity 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà */
-}
-
-/* Hiệu ứng khi hover */
-.activity-card:hover {
-  transform: scale(1.05); /* Phóng to nhẹ khi hover */
-}
-
-.activity-card:hover::before {
-  opacity: 1; /* Hiển thị lớp phủ khi hover */
-}
-
-.activity-card:hover img {
-  opacity: 0.8; /* Làm mờ hình ảnh một chút khi hover */
-}
-
-.activity-card p {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  text-shadow: 1px 1px 2px black;
-  margin: 0;
-  z-index: 1;
-}
 
 .support {
   display: flex;
@@ -365,12 +272,14 @@ border-top: 3px solid #4CAF50;
   font-size: 1.1em;
   margin-bottom: 10px;
 }
+
 
 /* News Section */
 
 .news {
   padding: 50px 20px;
   text-align: center;
+  margin-bottom: 100px;
 }
 
 .news h2 {
@@ -423,7 +332,7 @@ flex-wrap: wrap;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 400px;
+  max-width: 300px;
 }
 
 .side-news .news-item {

@@ -16,7 +16,7 @@ body {
 
 .title-decoration {
   width: 100%;
-  height: 600px;
+  height: 800px;
   display: block;
   margin: 0 auto;
   
@@ -78,6 +78,7 @@ nav ul li {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-family: 'Roboto', Arial, sans-serif;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .donate-overlay {
@@ -101,16 +102,14 @@ nav ul li {
 .donation-content {
   max-width: 90%;
   margin: 0 auto;
-  padding: 5px 20px;
   text-align: center;
 }
 
 .donation-content h2 {
   color: #00703c; /* Xanh lá cây đậm */
-  font-size: 28px;
+  font-size: 48px;
   font-weight: 800;
-  line-height: 1.4;
-  margin-bottom: 20px;
+  line-height: 1.0;
   text-align: center;
 }
 
@@ -120,7 +119,7 @@ nav ul li {
   color: #333;
   text-align: left;
   max-width: 100%;
-  margin: 0 0 30px 0;
+  margin-top: 30px;
 }
 
 .donation-content h3 {
@@ -151,7 +150,7 @@ nav ul li {
 
 .qr-code-section h3 {
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .qr-code-section p {
@@ -197,7 +196,7 @@ nav ul li {
 /* Donation Table */
 .donation-table {
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 60px auto;
   padding: 30px;
   border: 2px solid #28a745; /* viền xanh */
   border-radius: 20px;        /* bo góc */
@@ -234,7 +233,7 @@ nav ul li {
   padding-right: 50px;
 }
 .donation-table th:nth-child(2), .donation-table td:nth-child(2) { /* NGÀY CHUYỂN */
-  width: 10%;
+  width: 20%;
 }
 .donation-table th:nth-child(3), .donation-table td:nth-child(3) { /* SỐ TIỀN */
   width: 20%;
@@ -293,12 +292,21 @@ nav ul li {
   position: relative;
   width: 250px;
 }
+.search-box img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
 
 .search-box input {
-  width: 90%;
-  padding: 8px 36px 8px 12px; /* padding-left nhường chỗ cho icon */
+  width: 100%;
+  padding: 14px 44px 14px 18px; /* padding-left nhường chỗ cho icon */
   border: 1px solid #ccc;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 14px;
   outline: none;
   box-sizing: border-box;

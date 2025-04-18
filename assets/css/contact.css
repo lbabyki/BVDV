@@ -6,8 +6,6 @@ body {
 }
 
 
-
-
 .title-container {
   position: relative;
   display: inline-block;
@@ -18,7 +16,7 @@ body {
 
 .title-decoration {
   width: 100%;
-  height: 600px;
+  height: 800px;
   display: block;
   margin: 0 auto;
   
@@ -71,7 +69,7 @@ nav ul li {
 }
 .overlay-title {
   position: absolute; 
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -101,8 +99,9 @@ nav ul li {
 
 
 .contact-buttons {
+  margin-top: 30px;
 position: relative;
-padding-bottom: 50px; /* để có không gian hiển thị 2 đường kẻ */
+padding-bottom: 60px; /* để có không gian hiển thị 2 đường kẻ */
 }
 
 .contact-buttons::before,
@@ -202,6 +201,13 @@ bottom: 5px; /* dòng thứ hai, cách 15px bên dưới */
   object-fit: cover;
   border-radius: 10px;
 }
+.map-title {
+  text-align: left;
+  color: #28a745;
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
 
 .address-map-wrapper {
   position: relative;
@@ -276,13 +282,13 @@ width: 50%;
   background-color: #ffd700;
   color: #333;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 40px;
   width: 120px;
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .contact-form button:hover {
