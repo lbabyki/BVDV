@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liên hệ</title>
     <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/header-footer.css">
 </head>
 <body>
-    <header class="header-with-decoration">
-        <div class="navbar">
-            <img src="./assets/image/logo.png" alt="Logo" class="logo">
-            <div class="nav-actions">
-                <nav>
-                    <ul>
-                        <li>Về BVĐV ▾</li>
-                        <li>Loài ▾</li>
-                        <li>Tham gia ▾</li>
-                    </ul>
-                </nav>
-                <div class="actions">
-                    <button class="donate">Đóng góp</button>
-                    <span class="search-icon">🔍</span>
-                </div>
-            </div>
-        </div>
-    </header>
+  <header class="header">
+    <div class="footer-image">
+      <img src="asset/dongvat.png">
+    </div>
+    <nav class="nav">
+      <a href="#">Về BVDV <span>▼</span></a>
+      <a href="#">Loài <span>▼</span></a>
+      <a href="#">Tham gia <span>▼</span></a>
+    </nav>
+    <div class="actions">
+      <button class="donate-btn">Đóng góp</button>
+      <div class="icons">
+        <span class="search-icon">🔍</span>
+      
+      </div>
+    </div>
+  </header>
 
     <section class="title-container"></section>
         <img src="./assets/image/ccna.png" alt="Decoration" class="title-decoration">
@@ -93,30 +93,42 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="footer-logo.png" alt="Footer Logo">
-                <p>TRUNG TÂM BẢO VỆ ĐỘNG VẬT VIỆT NAM</p>
-            </div>
-            <div class="footer-info">
-                <h3>Thông tin khác</h3>
-                <p>Địa chỉ: 123 Đường Rừng, Quận 1, TP. Hồ Chí Minh</p>
-                <p>Hotline: 0123 456 789</p>
-                <p>Email: info@baovedongvat.com</p>
-            </div>
-            <div class="footer-social">
-                <h3>Theo dõi chúng tôi</h3>
-                <div class="social-icons">
-                    <span>📘</span>
-                    <span>📸</span>
-                    <span>📱</span>
-                </div>
-            </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-image">
+          <img src="asset/dongvat.png" />
+          <p><strong>TRUNG TÂM BẢO VỆ ĐỘNG VẬT VIỆT NAM</strong></p>
         </div>
-        <div class="copyright">
-            <p>© 2025 Trung tâm Bảo vệ Động vật Việt Nam. Đã đăng ký bản quyền.</p>
+        <div class="footer-contact">
+          <h4>Thông Tin Liên Lạc</h4>
+          <p><strong>Địa chỉ:</strong><br/>Bửu Long, Biên Hòa, Đồng Nai.</p>
+          <p><strong>Số điện thoại:</strong><br/>+84 352 7982 JQK</p>
+          <p><strong>Email:</strong><br/>bvdongvat@gmail.com</p>
         </div>
+        <div class="footer-form">
+          <h4>Đăng ký để nhận thông báo BVDV</h4>
+          <form>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required />
+        
+            <label for="name">Tên của bạn</label>
+            <input type="text" id="name" placeholder="Tên" required />
+        
+            <button type="submit">ĐĂNG KÝ</button>
+          </form>
+        </div>
+        <div class="footer-social">
+          <h4>Theo dõi chúng tôi tại:</h4>
+        <div class="social-icons">
+          <span style="font-size: 24px; margin-right: 10px;">📘</span> <!-- Facebook -->
+          <span style="font-size: 24px; margin-right: 10px;">🎵</span> <!-- TikTok -->
+          <span style="font-size: 24px;">📷</span> <!-- Instagram -->
+        </div>
+      </div>
+      </div>
+      <div class="footer-bottom">
+        <p>©2025 BVDV. MỌI QUYỀN ĐƯỢC BẢO LƯU.</p>
+      </div>
     </footer>
 </body>
 </html>

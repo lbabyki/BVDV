@@ -5,18 +5,6 @@ body {
   color: #333;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 0; 
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between; 
-  padding: 10px 60px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 
 .title-container {
   position: relative;
@@ -352,56 +340,4 @@ nav ul li {
   font-size: 16px;
   font-weight: 500;
   color: #000;
-}
-
-/* Footer */
-footer {
-  background: linear-gradient(to right, #28a745, #17a2b8);
-  color: white;
-  padding: 30px 20px;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-}
-
-.footer-logo img {
-  width: 50px;
-  margin-bottom: 10px;
-}
-
-.footer-logo p {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.footer-info h3,
-.footer-social h3 {
-  font-size: 16px;
-  margin-bottom: 15px;
-}
-
-.footer-info p {
-  margin: 5px 0;
-}
-
-.social-icons {
-  display: flex;
-  gap: 15px;
-}
-
-.social-icons span {
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.copyright {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 12px;
 }
