@@ -6,108 +6,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thành viên BVĐV</title>
   <link rel="stylesheet" href="./assets/css/members.css">
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/header-footer.css">
 </head>
 
 <body>
-    <header class="header-with-decoration">
-        <div class="navbar">
-            <img src="image/logo.png" alt="Logo" class="logo">
-            <div class="nav-actions">
-                <nav>
-                    <ul>
-                        <li>Về BVĐV ▾</li>
-                        <li>Loài ▾</li>
-                        <li>Tham gia ▾</li>
-                    </ul>
-                </nav>
-                <div class="actions">
-                    <button class="donate">Đóng góp</button>
-                    <span class="search-icon">🔍</span>
+    <header class="header">
+        <div class="header-image">
+          <img src="./assets/image/logo.png">
+        </div>
+        <nav class="nav">
+          <a href="#">Về BVDV <span>▼</span></a>
+          <a href="#">Loài <span>▼</span></a>
+          <a href="#">Tham gia <span>▼</span></a>
+        </nav>
+        <div class="actions">
+          <button class="donate-btn">Đóng góp</button>
+          <div class="icons">
+            <img src="./assets/image/timkiem.png" alt="timkiem" class="actions">
+          </div>
+        </div>
+      </header>
+    <section class="title-container">
+        <img src="./assets/image/ccna.png" alt="Decoration" class="title-decoration">
+        <h1 class="overlay-title">
+            <h1 class="overlay-title">THÀNH VIÊN NHÓM BẢO VỆ ĐỘNG VẬT</h1>
+        </h1>
+    </section>
+    <main>
+        <section class="members">
+            <h2>DANH SÁCH THÀNH VIÊN</h2>
+            <div class="member-list">
+                <div class="member">
+                    <div class="avatar" style="background-image: url('./assets/image/member1.jpg');"></div>
+                    <h3>Lê Hoàng Giang</h3>
+                    <p>Trưởng nhóm</p>
+                    <hr class="divider">
+                    <p>Code HTML/CSS</p>
+                </div>
+                <div class="member">
+                    <div class="avatar" style="background-image: url('./assets/image/member2.jpg');"></div>
+                    <h3>Nguyễn Văn Hoàng</h3>
+                    <p>Design Figma</p>
+                    <hr class="divider">
+                    <p>Design Figma</p>
+                </div>
+                <div class="member">
+                    <div class="avatar" style="background-image: url('./assets/image/member3.jpg');"></div>
+                    <h3>Mai Nhật Huy</h3>
+                    <p>Thành viên</p>
+                    <hr class="divider">
+                    <p>Code frontend</p>
+                </div>
+                <div class="member">
+                    <div class="avatar" style="background-image: url('./assets/image/member4.jpg');"></div>
+                    <h3>Lưu Quang Thắng</h3>
+                    <p>Thành viên</p>
+                    <hr class="divider">
+                    <p>Code frontend</p>
                 </div>
             </div>
-        </div>
-        <div class="title-container">
-            <img src="image/ccna.png" alt="Decoration" class="title-decoration">
-            <h1 class="overlay-title">THÀNH VIÊN NHÓM BẢO VỆ ĐỘNG VẬT</h1>
-        </div>
-    </header>
-  
-  <main>
-    <section class="members">
-      <h2>DANH SÁCH THÀNH VIÊN</h2>
-      <div class="member-list">
-        <div class="member">
-          <div class="avatar" style="background-image: url('image/member1.jpg');"></div>
-          <h3>Lê Hoàng Giang</h3>
-          <p>Trưởng nhóm</p>
-          <p>Ngồi chửi và chỉ việc</p>
-        </div>
-        <div class="member">
-          <div class="avatar" style="background-image: url('image/member2.jpg');"></div>
-          <h3>Nguyễn Văn Hoàng</h3>
-          <p>Chỉ làm mỗi figma</p>
-          <p>Design Figma</p>
-        </div>
-        <div class="member">
-          <div class="avatar" style="background-image: url('image/member3.jpg');"></div>
-          <h3>Mai Nhật Huy</h3>
-          <p>Thành viên</p>
-          <p>Làm trang Home, Đóng góp, Thành viên và Liên hệ</p>
-        </div>
-        <div class="member">
-          <div class="avatar" style="background-image: url('image/member4.jpg');"></div>
-          <h3>Lưu Quang Thắng</h3>
-          <p>Thành viên</p>
-          <p></p>
-        </div>
-      </div>
-      <div class="join">
-        <p>THAM GIA CÙNG CHÚNG TÔI ĐỂ BẢO VỆ ĐỘNG VậT VIỆT NAM</p>
-        <button>THAM GIA</button>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-content">
-        <!-- Logo và thông tin -->
-        <div class="logo-info">
-            <img src="image/logo.png" alt="Logo">
-            <p>TRUNG TÂM BẢO VỆ ĐỘNG VẬT VIỆT NAM</p>
-        </div>
-
-        <!-- Thông tin liên lạc -->
-        <div class="contact">
-            <h3>Thông Tin Liên Lạc</h3>
-            <p>Địa chỉ: Bửu Long, Biên Hòa, Đông Nai</p>
-            <p>Số điện thoại: +84 123456789</p>
-            <p>Email: <a href="mailto:bvdongvat@gmail.com">bvdongvat@gmail.com</a></p>
-        </div>
-
-
-        <!-- Form đăng ký -->
-        <div class="newsletter">
-            <h3>Đăng ký </h3>
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="Tên của bạn">
-            <button>ĐĂNG KÝ</button>
-        </div>
-
-
-        <!-- Mạng xã hội -->
-        <div class="social-container">
-            <div class="social">
-                <h3>Theo dõi chúng tôi tại:</h3>
-                <span>📘</span>
-                <span>🎵</span>
-                <span>📷</span>
+            <div class="join">
+                <p>THAM GIA CÙNG CHÚNG TÔI ĐỂ BẢO VỆ ĐỘNG VậT VIỆT NAM</p>
+                <button>THAM GIA</button>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- Bản quyền -->
-    <div class="copyright">
-        <p>©2025 BVĐV. MỌI QUYỀN ĐƯỢC BẢO LƯU.</p>
-    </div>
-</footer>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-image">
+          <img src="./assets/image/logo.png" />
+          <p><strong>TRUNG TÂM BẢO VỆ ĐỘNG VẬT VIỆT NAM</strong></p>
+        </div>
+        <div class="footer-contact">
+          <h4>Thông Tin Liên Lạc</h4>
+          <p>Địa chỉ:<br/>Bửu Long, Biên Hòa, Đồng Nai.</p>
+          <p>Số điện thoại:<br/>+84 352 7982 JQK</p>
+          <p>Email:<br/>bvdongvat@gmail.com</p>
+        </div>
+        <div class="footer-form">
+          <h4>Đăng ký để nhận thông báo BVDV</h4>
+          <form>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required />
+        
+            <label for="name">Tên của bạn</label>
+            <input type="text" id="name" placeholder="Tên" required />
+        
+            <button type="submit">ĐĂNG KÝ</button>
+          </form>
+        </div>
+        <div class="footer-social">
+          <h4>Theo dõi chúng tôi tại:</h4>
+        <div class="social-icons">
+          <img src="./assets/image/fb.png" alt="Facebook">
+            <img src="./assets/image/tiktok.png" alt="tiktok">
+            <img src="./assets/image/int.png" alt="Instagram">
+        </div>
+      </div>
+      </div>
+      <div class="footer-bottom">
+        <p>©2025 BVDV. MỌI QUYỀN ĐƯỢC BẢO LƯU.</p>
+      </div>
+    </footer>
+    <script src="./js/home.js"></script>
+  </main>
+</body>
 </html>
