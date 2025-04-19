@@ -11,22 +11,47 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-image">
-          <img src="./assets/image/logo.png">
+  <header class="header">
+    <div class="header-image">
+      <img src="./assets/image/logo.png">
+    </div>
+    <nav class="nav">
+      <div class="nav-item">
+        <a href="#">Về BVDV <span>▼</span></a>
+        <div class="dropdown">
+          <a href="#">Thành viên</a>
+          <a href="#">Thông tin liên lạc</a>
         </div>
-        <nav class="nav">
-          <a href="#">Về BVDV <span>▼</span></a>
-          <a href="#">Loài <span>▼</span></a>
-          <a href="#">Tham gia <span>▼</span></a>
-        </nav>
-        <div class="actions">
-          <button class="donate-btn">Đóng góp</button>
-          <div class="icons">
-            <img src="./assets/image/timkiem.png" alt="timkiem" class="actions">
-          </div>
-        </div>
-      </header>
+      </div>
+
+      <div class="nav-item">
+<a href="#">Loài <span>▼</span></a>
+<div class="dropdown dropdown-loai">
+  <a href="#">Tê Tê</a>
+  <a href="#">Rái Cá</a>
+  <a href="#">Đang cập nhật</a>
+</div>
+</div>
+
+        <div class="nav-item">
+<a href="#">Tham gia <span>▼</span></a>
+<div class="dropdown">
+  <a href="#">Tình nguyện</a>
+  <a href="#">Báo cáo vi phạm</a>
+</div>
+</div>
+</nav>
+    </nav>
+    <div class="actions">
+      <div class="search-container">
+        <input type="text" placeholder="Tìm kiếm..." class="search-input" />
+      </div>
+      <button class="donate-btn">Đóng góp</button>
+      <div class="icons">
+        <img src="./assets/image/timkiem.png" alt="timkiem" class="search-icon">
+      </div>
+    </div>
+  </header>
     <section class="title-container">
         <img src="./assets/image/ccna.png" alt="Decoration" class="title-decoration">
         <h1 class="overlay-title">
