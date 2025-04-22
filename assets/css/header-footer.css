@@ -20,7 +20,6 @@
   color: black;
   text-decoration: none;
   font-weight: 00;
-  
 }
 
 .nav {
@@ -30,7 +29,6 @@
   margin-left: auto;
   margin-right: 40px;
 }
-
 
 .nav span {
   font-size: 0.8em;
@@ -48,19 +46,29 @@
   padding: 10px 0;
   z-index: 100;
   min-width: 160px;
+  transition: all 0.4s ease;
 }
 
 .dropdown a {
   display: block;
+  margin-bottom: 5px;
   padding: 8px 16px;
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   white-space: nowrap;
-}
-
-.dropdown a:hover {
   background-color: #139847;
-  border-radius: 8px;
+}
+.dropdown a:first-child {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.dropdown a:last-child {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.dropdown a:hover {
+  background-color: #22e66df4;
+  color: black;
 }
 .nav-item:hover .dropdown {
   display: block;
@@ -76,7 +84,7 @@
 }
 
 .donate-btn {
-  background-color: #83F66E;
+  background-color: #83f66e;
   border: none;
   padding: 8px 16px;
   border-radius: 10px;
@@ -107,8 +115,6 @@
   display: inline-block;
 }
 
-
-
 .footer {
   background: linear-gradient(to right, #a8e063, #56ccf2);
   color: #000;
@@ -132,7 +138,7 @@
 
 .footer-image p {
   margin-top: 20px;
-  margin-bottom:0px;
+  margin-bottom: 0px;
   font-weight: bold;
 }
 
@@ -212,11 +218,11 @@
   background-color: #218c3b;
 }
 .footer-form label {
-color: #139847;
-font-weight: bold;
-margin-bottom: 5px;
-font-size: 14px;
-margin-top: 10px;
+  color: #139847;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+  margin-top: 10px;
 }
 .footer-social .social-icons img {
   margin-top: 2px;
@@ -225,7 +231,7 @@ margin-top: 10px;
 }
 
 .footer-social h4 {
-color: white;
+  color: white;
 }
 .footer-social i {
   margin-right: 10px;
