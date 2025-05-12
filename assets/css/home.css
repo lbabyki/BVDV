@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Helvetica;
   background: #fff;
   color: #333;
 }
@@ -19,52 +19,6 @@ body {
   display: block;
   margin: 0 auto;
 }
-
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 100px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 100px;
-}
-
-nav ul li {
-  cursor: pointer;
-  color: #333;
-  font-weight: 500;
-}
-
-.actions {
-  display: flex;
-  align-items: center;
-  gap: 100px;
-}
-
-.donate {
-  background-color: #28a745;
-  color: white;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.search-icon {
-  font-size: 20px;
-}
-
-.main-title {
-  margin: 30px 0;
-  font-size: 36px;
-  font-weight: bold;
-  color: #00703c;
-  font-family: "Roboto", Arial, sans-serif;
-}
 .overlay-title {
   position: absolute;
   top: 45%;
@@ -74,7 +28,7 @@ nav ul li {
   font-size: 64px;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: Helvetica;
   text-transform: uppercase;
   text-align: center;
 }
@@ -114,7 +68,7 @@ nav ul li {
 }
 
 .intro p {
-  font-size: 1em;
+  font-size: 20pt;
   line-height: 1.6;
   margin-top: 20px;
   margin-bottom: 30px; /* tăng khoảng cách phía dưới */
@@ -196,7 +150,7 @@ nav ul li {
   left: 30px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 28px;
   text-shadow: 1px 1px 2px black;
   margin: 0;
   z-index: 1;
@@ -266,7 +220,7 @@ nav ul li {
 
 .support-item h3 {
   color: #008000;
-  font-size: 1.1em;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
@@ -348,5 +302,3 @@ nav ul li {
   font-weight: bold;
   margin-top: 5px;
 }
-
-/* Footer */

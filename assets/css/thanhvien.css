@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Helvetica;
     background: #fff;
     color: #333;
   }
@@ -22,51 +22,6 @@ body {
     
   }
   
-  .nav-actions {
-    display: flex;
-    align-items: center;
-    gap: 100px; 
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 100px; 
-  }
-  
-  nav ul li {
-    cursor: pointer;
-    color: #333;
-    font-weight: 500;
-  }
-  
-  .actions {
-    display: flex;
-    align-items: center;
-    gap: 100px; 
-  }
-  
-  .donate {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 8px 14px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .search-icon {
-    font-size: 20px;
-  }
-  
-  .main-title {
-    margin: 30px 0;
-    font-size: 36px;
-    font-weight: bold;
-    color: #00703c;
-    font-family: 'Roboto', Arial, sans-serif;
-  }
   .overlay-title {
     position: absolute; 
     top: 45%;
@@ -76,26 +31,9 @@ body {
     font-size: 64px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: Helvetica;
     text-transform: uppercase;
     white-space: nowrap;
-  }
-  
-  .donate-overlay {
-    position: absolute;
-    top: 75%; /* nằm dưới tiêu đề */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 25px;
-    font-size: 18px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    font-weight: bold;
-    transition: background-color 0.3s ease;
   }
 
   
@@ -115,7 +53,7 @@ body {
 .member-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px 400px;
+    gap: 10px 250px;
     max-width: 1000px;
     justify-items: center;
     justify-content: center;
@@ -145,13 +83,14 @@ body {
 .member h3 {
     color: #139847;
     margin: 10px 0 5px;
-    font-size: 25px; 
+    font-size: 40px; /* Tăng kích thước chữ, ví dụ từ 32px lên 40px */
+    white-space: nowrap;
 }
 
 .member p {
     
     color: #666; 
-    font-size: 20px; 
+    font-size: 25px; 
     margin: 2px 0;
 }
 .divider {
@@ -195,122 +134,5 @@ margin-right: calc(-50vw + 50%);
 .join button:hover {
     background-color: #f0f0f0; 
 }
-  
-footer {
-    background: #1a1a1a;
-    color: white;
-    padding: 30px 20px;
-    font-size: 14px;
-}
 
-.footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 70px;
-    max-width: 1200px;
-    margin: 0 auto 20px; 
-}
-
-.logo-info {
-    flex: 1;
-    min-width: 250px;
-    margin-right: 30px;
-}
-
-.logo-info img {
-    width: 300px;
-    margin-bottom: 10px;
-}
-
-.logo-info p {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.contact {
-    flex: 1;
-    min-width: 250px;
-}
-
-.contact h3,
-.newsletter h3,
-.social h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.contact p,
-.newsletter p {
-    margin: 10px 0;
-}
-
-.contact a {
-    color: white;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    text-decoration: underline;
-}
-
-.newsletter {
-    flex: 1;
-    min-width: 250px;
-    max-width: 300px;
-}
-
-.newsletter input {
-    display: block;
-    width: 100%;
-    max-width: 200px;
-    margin: 10px 0;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.newsletter button {
-    background-color: #3dbb3d;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 5px;
-    cursor: pointer;
-    width: 100%;
-    max-width: 200px;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.newsletter button:hover {
-    background-color: #34a834;
-}
-
-.social-container {
-    flex: 1;
-    min-width: 200px;
-}
-
-.social {
-    text-align: right;
-}
-
-.social h3 {
-    margin-bottom: 15px;
-}
-
-.social span {
-    margin: 0 10px;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.copyright {
-    text-align: center;
-    font-size: 12px;
-    color: #aaa;
-}
+    
