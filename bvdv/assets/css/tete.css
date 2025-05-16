@@ -2,12 +2,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000;
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: white;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 40px 20px;
     display: flex;
@@ -19,34 +19,36 @@ body {
 .info-row {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 50px;
 }
 
 .pangolin-img {
-    width: 750px;
-    height: 350px;
+    width: 800px;
+    height: 500px;
     border-radius: 10px;
     object-fit: cover; 
     border-radius: 0;/* giúp ảnh không méo nếu đặt chiều cao cố định */
 }
 
-.title {
+.title { 
+  flex: 1;
     text-align: left;
-    max-width: 400px; /* thu hẹp vùng chữ để sát hơn */
+    min-width: 400px; /* thu hẹp vùng chữ để sát hơn */
 }
 
 .title h2 {
     color: #139847;
-    font-size: 36px;
+    font-size: 65px;
     margin-bottom: 10px;
 }
 
 .title p {
-    font-size: 28px;
+    font-size: 50px;
     font-weight: bold;
     line-height: 1.5;
+    word-break: break-word;
 }
 
 /* Menu khung */
@@ -57,7 +59,6 @@ body {
     background-color: #111;
     display: flex;
     justify-content: center;
-    gap: 10px;
     width: fit-content;        /* Để khung ôm sát nội dung */
     margin: 0 auto;            /* Canh giữa khung nếu cần */
 }
@@ -116,6 +117,13 @@ body {
 .content {
     flex: 1;
     max-width: 600px;
+}
+
+.content h2 {
+    margin: 10px 0;
+    font-size: 30px;
+    line-height: 2.5;
+    margin-left: 50px;
 }
 
 .content p {
@@ -308,12 +316,14 @@ body {
     width: 100%;
     border-radius: 50px;
     object-fit: cover;
+    height: 250px;     
+    width: 330px;      
   }
   
   .conservation-section {
     background-color: #000;
     color: #ffffff;
-    padding: 0px 20px;
+    padding: 15px 20px;
     text-align: center;
     font-family: Arial, sans-serif;
   }

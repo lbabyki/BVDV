@@ -3,31 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <title>Tê Tê - Loài bị săn nhiều nhất</title>
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/about.css">
-  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="assets/css/header-footer.css">
+  <link rel="stylesheet" href="assets/css/tete.css">
+  <link rel="stylesheet" href="assets/css/reset.css" />
 </head>
 <body>
   <header class="header">
     <div class="header-image">
-      <img src="image/dongvat.png">
+      <img src="assets/image/logo.png">
     </div>
     <nav class="nav">
-      <a href="#">Về BVDV <span>▼</span></a>
-      <a href="#">Loài <span>▼</span></a>
-      <a href="#">Tham gia <span>▼</span></a>
-    </nav>
+      <div class="nav-item">
+        <a href="home.html">Về BVDV <span>▼</span></a>
+        <div class="dropdown">
+          <a href="thanhvien.html">Thành viên</a>
+          <a href="thongtinlienlac.html">Thông tin liên lạc</a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+<a href="#">Loài <span>▼</span></a>
+<div class="dropdown dropdown-loai">
+  <a href="tete.html">Tê Tê</a>
+  <a href="#">Rái Cá</a>
+  <a href="#">Đang cập nhật</a>
+</div>
+</div>
+        <div class="nav-item">
+<a href="#">Tham gia <span>▼</span></a>
+<div class="dropdown">
+  <a href="tinhnguyen.html">Tình nguyện</a>
+  <a href="baocao.html">Báo cáo vi phạm</a>
+</div>
+</div>
+</nav>
+  
     <div class="actions">
-      <button class="donate-btn">Đóng góp</button>
+      <div class="search-container">
+        <input type="text" placeholder="Nhập nội dung cần tìm..." class="search-input" />
+      </div>
+      <a href="donggop.html" class="donate-btn">Đóng góp</a>
       <div class="icons">
-        <span class="search-icon">🔍</span>
+        <img src="assets/image/timkiem.png" alt="timkiem" class="search-icon">
       </div>
     </div>
   </header>
   <div class="container">
     <!-- Phần ảnh và mô tả -->
     <div class="info-row">
-      <img src="image/dongvat.png" alt="Tê tê trên cành cây" class="pangolin-img">
+      <img src="assets/image/onete.png" alt="Tê tê trên cành cây" class="pangolin-img">
       <div class="title">
         <h2>TÊ TÊ</h2>
         <p>Loài có vú bị<br> săn nhiều nhất<br> trên thế giới</p>
@@ -52,7 +76,7 @@
   <h1 class="section-title">THÔNG TIN VỀ TÊ TÊ</h1>
   <div class="container info-section">
     <div class="content">
-        <p><strong>TÊ TÊ LÀ NHỮNG SINH VẬT KỲ DIỆU</strong></p>
+        <h2>TÊ TÊ LÀ NHỮNG SINH VẬT KỲ DIỆU</h2>
         <p>Tê tê là loài thú có vú duy nhất trên thế giới có cơ thể được bao phủ lớp vảy cứng.</p>
         <p>Tê tê hoạt động và kiếm ăn vào ban đêm.</p>
         <p>Tê tê có khả năng cuộn tròn để bảo vệ bản thân khỏi kẻ thù.</p>
@@ -62,7 +86,7 @@
     </div>
     <div class="divider"></div>
     <div class="image">
-        <img src="image/dongvat.png" alt="Tê tê dưới đất">
+        <img src="assets/image/twote.jpg" alt="Tê tê dưới đất">
     </div>
   </div>
   <div class="container pangolin-types">
@@ -76,7 +100,7 @@
       <div class="pangolin-box">
         <h3 class="pangolin-title">TÊ TÊ JAVA</h3>
         <p class="pangolin-species">Manis javanica</p>
-        <img src="image/dongvat.png" alt="Tê tê Java">
+        <img src="assets/image/javaaa.webp" alt="Tê tê Java">
         <div class="pangolin-description">
         <h4>Môi trường sống và phân bố</h4>
         <p>
@@ -91,7 +115,7 @@
       <div class="pangolin-box">
         <h3 class="pangolin-title">TÊ TÊ VÀNG</h3>
         <p class="pangolin-species">Manis pentadactyla</p>
-        <img src="image/dongvat.png" alt="Tê tê Vàng">
+        <img src="assets/image/gold.webp" alt="Tê tê Vàng">
         <div class="pangolin-description">
         <h4>Môi trường sống và phân bố</h4>
         <p>
@@ -110,7 +134,7 @@
       <h2 class="sub-title">MỘT TƯƠNG LAI KHÔNG TƯỞI SÁNG VỚI LOÀI TÊ TÊ</h2>
       <div class="threat-info-row">
         <div class="image-left">
-        <img src="image/dongvat.png" alt="Tê tê bị nhốt trong lưới" class="image-full">
+        <img src="assets/image/nhottete.png" alt="Tê tê bị nhốt trong lưới" class="image-full">
         <p class="threat-caption">Tê tê bị cho vào các túi lưới trong quá trình vận chuyển</p>
       </div>
       <div class="text-right">
@@ -121,15 +145,15 @@
     </div>
     <div class="image-gallery">
         <div class="threat-gallery-item">
-          <img src="image/dongvat.png" alt="Rượu tê tê" class="gallery-img small-img">
+          <img src="assets/image/ruoute.webp" alt="Rượu tê tê" class="gallery-img small-img">
           <p class="threat-caption">Rượu tê tê</p>
         </div>
         <div class="threat-gallery-item">
-          <img src="image/dongvat.png" alt="Vảy tê tê làm thuốc" class="gallery-img small-img">
+          <img src="assets/image/vaytete.jpg" alt="Vảy tê tê làm thuốc" class="gallery-img small-img">
           <p class="threat-caption">Vảy tê tê dùng làm thuốc</p>
         </div>
         <div class="threat-gallery-item">
-          <img src="image/dongvat.png" alt="Thịt tê tê" class="gallery-img small-img">
+          <img src="assets/image/thitte.jpg" alt="Thịt tê tê" class="gallery-img small-img">
           <p class="threat-caption">Thịt tê tê</p>
         </div>
       </div>
@@ -170,7 +194,7 @@
     <!-- Hình ảnh lớn phía trên -->
     <div class="main-image">
       <div class="image-wrapper">
-        <img src="image/dongvat.png" alt="Bảo trợ tê tê">
+        <img src="assets/image/baotro.png" alt="Bảo trợ tê tê">
         <p class="image-caption">BẢO TRỢ TÊ TÊ</p>
       </div>
     </div>
@@ -178,58 +202,64 @@
     <div class="support-gallery">
       <div class="gallery-item">
         <div class="image-wrapper">
-          <img src="image/dongvat.png" alt="Báo cáo vi phạm">
+          <img src="assets/image/baocaoo.jpg" alt="Báo cáo vi phạm">
           <p class="gallery-caption">BÁO CÁO VI PHẠM</p>
         </div>
       </div>
       <div class="gallery-item">
         <div class="image-wrapper">
-          <img src="image/dongvat.png" alt="Tình nguyện">
+          <img src="assets/image/tinhnguyennn.png" alt="Tình nguyện">
           <p class="gallery-caption">TÌNH NGUYỆN</p>
         </div>
       </div>
       <div class="gallery-item">
         <div class="image-wrapper">
-          <img src="image/dongvat.png" alt="Đóng góp">
+          <img src="assets/image/dongggg.jpg" alt="Đóng góp">
           <p class="gallery-caption">ĐÓNG GÓP</p>
         </div>
       </div>
     </div>
   </div>
   <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-image">
-        <img src="image/dongvat.png" />
-        <p><strong>TRUNG TÂM BẢO VỆ ĐỘNG VẬT VIỆT NAM</strong></p>
+      <div class="footer-container">
+        <div class="footer-image">
+          <img src="assets/image/logo.png" />
+          <p><strong>TRUNG TÂM BẢO VỆ ĐỘNG VẬT VIỆT NAM</strong></p>
+        </div>
+        <div class="footer-contact">
+          <h4>Thông Tin Liên Lạc</h4>
+          <p>Địa chỉ:<br/>Bửu Long, Biên Hòa, Đồng Nai.</p>
+          <p>Số điện thoại:<br/>+84 352 7982 JQK</p>
+          <p>Email:<br/>bvdongvat@gmail.com</p>
+        </div>
+        <div class="footer-form">
+          <h4>Đăng ký để nhận thông báo BVDV</h4>
+          <form>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required />
+        
+            <label for="name">Tên của bạn</label>
+            <input type="text" id="name" placeholder="Tên" required />
+        
+            <button type="submit">ĐĂNG KÝ</button>
+          </form>
+        </div>
+        <div class="footer-social">
+          <h4>Theo dõi chúng tôi tại:</h4>
+        <div class="social-icons">
+          <img src="assets/image/fb.png" alt="Facebook">
+          <img src="assets/image/tiktok.png" alt="tiktok">
+          <img src="assets/image/int.png" alt="Instagram">
+        </div>
       </div>
-      <div class="footer-contact">
-        <h4>Thông Tin Liên Lạc</h4>
-        <p><strong>Địa chỉ:</strong><br/>Bửu Long, Biên Hòa, Đồng Nai.</p>
-        <p><strong>Số điện thoại:</strong><br/>+84 352 7982 JQK</p>
-        <p><strong>Email:</strong><br/>bvdongvat@gmail.com</p>
       </div>
-      <div class="footer-form">
-        <h4>Đăng ký để nhận thông báo BVDV</h4>
-        <form>
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Email" required />
-          <label for="name">Tên của bạn</label>
-          <input type="text" id="name" placeholder="Tên" required />
-          <button type="submit">ĐĂNG KÝ</button>
-        </form>
+      <div class="footer-bottom">
+        <p>©2025 BVDV. MỌI QUYỀN ĐƯỢC BẢO LƯU.</p>
       </div>
-      <div class="footer-social">
-        <h4>Theo dõi chúng tôi tại:</h4>
-      <div class="social-icons">
-        <span style="font-size: 24px; margin-right: 10px;">📘</span> <!-- Facebook -->
-        <span style="font-size: 24px; margin-right: 10px;">🎵</span> <!-- TikTok -->
-        <span style="font-size: 24px;">📷</span> <!-- Instagram -->
-      </div>
-    </div>
-    </div>
-    <div class="footer-bottom">
-      <p>©2025 BVDV. MỌI QUYỀN ĐƯỢC BẢO LƯU.</p>
-    </div>
-  </footer>
-</body>
+    </footer>
+    <button class="scroll-to-top" id="scrollToTopBtn">
+  ↑
+</button>
+    <script src="assets/js/all.js"></script>
+  </body>
 </html>

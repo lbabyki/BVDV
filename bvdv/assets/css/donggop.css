@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  font-family: Helvetica;
+  background: #fff;
+  color: #333;
+}
+.title-container {
+  position: relative;
+  display: inline-block;
+  margin: 30px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.title-decoration {
+  width: 100%;
+  height: 800px;
+  display: block;
+ margin: -29px 0;
+}
+
+.overlay-title {
+  position: absolute; 
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 64px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: Helvetica;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Donation Content */
+.donation-content {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.donation-content h2 {
+  color: #28a745; /* Xanh lá cây đậm */
+  font-size: 48px;
+  line-height: 1.0;
+  text-align: center;
+}
+
+.donation-content p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #333;
+  text-align: left;
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+.donation-content h3 {
+  margin-top: 90px;
+  font-size:40px;
+  margin-bottom: 30px;
+}
+
+.donation-content ul {
+  list-style: none;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.donation-content ul li {
+  margin: 20px 0;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+/* QR Code Section */
+.qr-code-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.qr-code-section h3 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.qr-code-section p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.qr-code-content {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.qr-steps {
+  display: flex;
+  gap: 20px;
+}
+
+.qr-steps img {
+  width: 300px;
+  height: auto;
+}
+
+.qr-code {
+  text-align: center;
+}
+
+.qr-code img {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+.qr-code .qr-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff69b4;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Donation Table */
+.donation-table {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 70px 30px 30px 30px;
+  border: 2px solid #28a745; /* viền xanh */
+  border-radius: 20px;        /* bo góc */
+  background: white;
+  position: relative;
+}
+
+.donation-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0;
+}
+
+.donation-table th,
+.donation-table td {
+  padding: 12px 8px; /* Giảm padding để các cột gần nhau hơn */
+  border-bottom: 1px solid #333; /* viền dưới giống ảnh */
+  text-align: left;
+  font-size: 15px;
+}
+
+.donation-table th {
+  font-weight: bold;
+  background: none;       /* bỏ màu nền */
+  color: #000;            /* chữ đen */
+  border-bottom: 2px solid #333;
+}
+
+/* Đặt chiều rộng cố định cho các cột để kiểm soát khoảng cách */
+.donation-table th:nth-child(1), .donation-table td:nth-child(1) { /* TÀI KHOẢN NHẬN */
+  width: 20%;
+  text-align: right;
+  padding-right: 50px;
+}
+.donation-table th:nth-child(2), .donation-table td:nth-child(2) { /* NGÀY CHUYỂN */
+  width: 20%;
+}
+.donation-table th:nth-child(3), .donation-table td:nth-child(3) { /* SỐ TIỀN */
+  width: 20%;
+  text-align: right;
+  padding-right: 40px;
+}
+.donation-table th:nth-child(4), .donation-table td:nth-child(4) { /* NỘI DUNG */
+  width: 40%;
+}
+
+.donation-table tbody tr:nth-child(even) {
+  background: none; /* bỏ nền xám */
+}
+
+/* Làm nổi bật số tiền */
+.donation-table td:nth-child(3) {
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Phân trang */
+.pagination {
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.pagination span {
+  font-weight: bold;
+}
+
+.pagination button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pagination button:hover {
+  background: #218838;
+}
+
+/* Thanh tìm kiếm góc trên phải */
+.search-container {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -310px;
+  margin-right: -80px;
+}
+
+.search-box {
+  position: relative;
+  width: 250px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.75); /* Đổ bóng mềm */
+    border-radius: 10px;
+}
+.search-box img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 14px 44px 14px 18px; /* padding-left nhường chỗ cho icon */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+
+.donate-buttons img {
+  width: 150px;
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+
+.donate-buttons img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.thank-you-message {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  line-height: 1.6;
+}
+
+.thank-you-message h2 {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.thank-you-message p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}

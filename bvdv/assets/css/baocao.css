@@ -1,11 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, sans-serif;
     background-color: white;
 }
 
@@ -13,7 +8,7 @@ body {
 .banner-title {
     background-color: #d9d9d9;
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
 }
 
 .banner-title h1 {
@@ -36,7 +31,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .section-info p {
@@ -97,8 +92,8 @@ body {
 .rescue-content {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
-    max-width: 1600px;
+    gap: 35px;
+    max-width: 1350px;
     margin: 0 auto;
 }
 
@@ -111,7 +106,7 @@ body {
     width: 100%;
     height: 450px; /* chiều cao cố định */
     object-fit: cover; /* giúp ảnh không bị méo khi co giãn */
-    border-radius: 0px;
+    border-radius: 5px;
 }
 .rescue-text {
     flex: 0 0 60%;

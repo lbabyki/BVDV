@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  font-family: Helvetica;
+  background: #fff;
+  color: #333;
+}
+
+.title-container {
+ position: relative;
+  display: inline-block;
+  margin: 30px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.title-decoration {
+  width: 100%;
+  height: 800px;
+  display: block;
+  margin: -63px 0;
+}
+
+.overlay-title {
+  position: absolute; 
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 64px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: Helvetica;
+  text-transform: uppercase;
+}
+
+
+.contact-buttons {
+  margin-top: 30px;
+position: relative;
+padding-bottom: 60px; /* để có không gian hiển thị 2 đường kẻ */
+}
+
+.contact-buttons::before,
+.contact-buttons::after {
+content: "";
+position: absolute;
+height: 4px;
+width: 70%; /* mỗi đường dài khoảng 35% màn hình */
+background-color: #ffd700;
+right: 0;
+bottom: 5px;
+}
+
+.contact-buttons::before {
+left: 0;
+bottom: 30px; /* dòng đầu tiên */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  flex-wrap: wrap;
+  max-width: 1510px;
+  margin: 0 auto;
+}
+
+.contact-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background: none; 
+  border-radius: 10px;
+  box-shadow: none;
+  text-align: center;
+}
+
+.contact-btn .icon {
+  width: 50px;
+  font-size: 500px;
+  object-fit: contain;
+}
+
+.contact-btn p {
+  margin: 0;
+  font-size: 25px;
+  color: #333;
+}
+.contact-btn .highlight {
+  color: #28a745; /* Màu xanh lá cây */
+}
+
+
+/* Address and Map */
+.address-map {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px 20px 50px 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.address {
+  text-align: center;
+  flex: 1;
+  min-width: 300px;
+  margin-top: 0px; 
+}
+
+.address h2 {
+  color: #28a745;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.address p {
+  margin: 10px 0;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.map {
+  flex: 1;
+  min-width: 300px;
+}
+
+.map img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.map-title {
+  text-align: center;
+  color: #28a745;
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.address-map-wrapper {
+  position: relative;
+  padding-bottom: 60px; /* tạo không gian cho đường kẻ */
+}
+
+.address-map-wrapper::before,
+.address-map-wrapper::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 70vw; /* chính xác 70% chiều ngang trình duyệt */
+  background-color: #ffd700;
+}
+
+.address-map-wrapper::before {
+  left: 0;
+  bottom: 30px;
+}
+
+.address-map-wrapper::after {
+  right: 0;
+  bottom: 5px;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-form h2 {
+  color: #28a745;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.contact-form label {
+  text-align: left;
+  font-weight: bold;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+width: 50%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #D9D9D9;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.required {
+  color: red;
+}
+
+.contact-form button {
+  background-color: #ffd700;
+  color: #333;
+  border: none;
+  padding: 10px 40px;
+  width: 120px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contact-form button:hover {
+  background-color: #ffca2c;
+}
